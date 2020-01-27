@@ -22,7 +22,7 @@
                 @{
                     if (Request.IsAuthenticated)
                     {
-                        <li>@Html.ActionLink("Log Out", "Logout", "Account", null, new { @class = "nav-item nav-link" })</li>
+                        <li>@Html.ActionLink(System.Web.HttpContext.Current.User.Identity.Name, "Logout", "Account", null, new { @class = "nav-item nav-link" })</li>
                     }
                     else
                     {
