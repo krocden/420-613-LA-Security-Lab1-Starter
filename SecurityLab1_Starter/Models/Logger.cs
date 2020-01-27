@@ -32,6 +32,20 @@ namespace SecurityLab1_Starter.Models
             }
 
         }
+        public void writeLogin(String e)
+        {
+            using (StreamWriter w = File.AppendText("C://Users//Kevin//Desktop//useraccess.txt"))
+            {
+                Log(e, w);
+                Log(e, w);
+            }
+
+            using (StreamReader r = File.OpenText("C://Users//Kevin//Desktop//useraccess.txt"))
+            {
+                DumpLog(r);
+            }
+
+        }
         public static void Log(string logMessage, TextWriter w)
         {
             w.Write("\r\nLog Entry : ");

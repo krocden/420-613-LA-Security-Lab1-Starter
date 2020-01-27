@@ -12,8 +12,8 @@ namespace SecurityLab1_Starter.Controllers
         // GET: Error
         public ActionResult NotFound()
         {
-            throw new Exception();
-            /*return View();*/
+            //throw new Exception();
+            return View();
         }
 
         public ActionResult ServerError()
@@ -30,8 +30,8 @@ namespace SecurityLab1_Starter.Controllers
         }
         public ActionResult Index()
         {
-            throw new Exception();
-            /*return View();*/
+            //throw new Exception();
+            return View();
         }
     }
 }
